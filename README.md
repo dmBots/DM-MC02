@@ -3,3 +3,8 @@
 #### 介绍
 达妙科技 DM_MC02 开发板资料
 
+### 渲染图
+![Image text](https://gitee.com/kit-miao/dm_-mc02/blob/master/image/DM_H7.png)
+
+### 资源介绍
+![Image text](https://gitee.com/kit-miao/dm_-mc02/blob/master/image/%E5%8F%82%E6%95%B0.png)
