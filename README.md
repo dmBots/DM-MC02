@@ -7,4 +7,4 @@
 ![Image text](https://gitee.com/kit-miao/dm_-mc02/raw/master/image/DM_H7.png)
 
 ### 资源介绍
-![Image text](https://gitee.com/kit-miao/dm_-mc02/blob/master/image/%E5%8F%82%E6%95%B0.png)
+![Image text](https://gitee.com/kit-miao/dm_-mc02/raw/master/image/%E5%8F%82%E6%95%B0.png)
