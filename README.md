@@ -8,3 +8,6 @@
 
 ### 资源介绍
 ![Image text](https://gitee.com/kit-miao/dm_-mc02/raw/master/image/%E5%8F%82%E6%95%B0.png)
+
+### 购买链接
+https://dmbot.taobao.com/
