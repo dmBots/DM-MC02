@@ -21,4 +21,4 @@ https://item.taobao.com/item.htm?ft=t&id=767305853444&skuId=5440731611044
 ### 购买链接
 扩展版开源工程链接：
 
-https://u.lceda.cn/account/user/projects/index/detail?project=763232d682134b5cb74ee9e8e4a3e4e1&listType=all
+https://oshwhub.com/dmbot/dm_mc02-h7-kai-fa-ban-pei-tao
