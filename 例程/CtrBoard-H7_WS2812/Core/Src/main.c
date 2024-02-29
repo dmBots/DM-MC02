@@ -103,11 +103,11 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
       WS2812_Ctrl(r, g, b);
-//      r++;
-//      g += 5;
-//      b += 10;
-//      HAL_Delay(1);
-//      r++;g++;b++;
+      r++;
+      g += 5;
+      b += 10;
+      HAL_Delay(1);
+      r++;g++;b++;
       HAL_Delay(100);
   }
   /* USER CODE END 3 */

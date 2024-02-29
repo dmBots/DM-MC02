@@ -84,6 +84,7 @@ void MPU_Config(void)
 }
 
 #define Camera_Buffer	0x24000000    // 摄像头图像缓冲区
+uint8_t temp[Display_Width*Display_Height*2]={0};
 /* USER CODE END 0 */
 
 /**
@@ -145,13 +146,12 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-		if (ov5640_frame_state == 1)	// 采集到了一帧图像
+		if (OV5640_FrameState == 1)	// 采集到了一帧图像
 		{		
-  			ov5640_frame_state = 0;		// 清零标志位
-
         LCD_ShowPicture(0,0,Display_Width,Display_Height, (uint8_t *)Camera_Buffer);	// 将图像数据复制到屏幕
-//				LCD_ShowString( 84 ,240,"FPS:");
-//				LCD_DisplayNumber( 132,240, OV5640_FPS,2) ;	// 显示帧率	
+  			OV5640_FrameState = 0;		// 清零标志位
+				//LCD_ShowString( 84 ,240,"FPS:");
+				//LCD_ShowIntNum( 132,240, OV5640_FPS,2) ;	// 显示帧率	
 		}	
     /* USER CODE END WHILE */
 
@@ -187,9 +187,9 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
   RCC_OscInitStruct.PLL.PLLM = 2;
-  RCC_OscInitStruct.PLL.PLLN = 40;
+  RCC_OscInitStruct.PLL.PLLN = 42;
   RCC_OscInitStruct.PLL.PLLP = 1;
-  RCC_OscInitStruct.PLL.PLLQ = 4;
+  RCC_OscInitStruct.PLL.PLLQ = 3;
   RCC_OscInitStruct.PLL.PLLR = 2;
   RCC_OscInitStruct.PLL.PLLRGE = RCC_PLL1VCIRANGE_3;
   RCC_OscInitStruct.PLL.PLLVCOSEL = RCC_PLL1VCOWIDE;

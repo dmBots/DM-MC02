@@ -1,6 +1,7 @@
 #include "lcd.h"
 #include "lcdfont.h"
-
+uint8_t lcd_finish_flag=0;
+extern DMA_HandleTypeDef hdma_spi1_tx;
 /**
 ************************************************************************
 * @brief:      	LCD_Writ_Bus: LCD串行数据写入函数
@@ -11,25 +12,31 @@
 *               - 当USE_ANALOG_SPI宏定义为假时，通过HAL_SPI_Transmit函数使用硬件SPI传输1字节数据。
 ************************************************************************
 **/
+
 void LCD_Writ_Bus(uint8_t dat) 
 {	
 	LCD_CS_Clr();
-#if USE_ANALOG_SPI
-	for(uint8_t i=0;i<8;i++) {			  
-		LCD_SCLK_Clr();
-		if(dat&0x80) {
-		   LCD_MOSI_Set();
-		} else {
-		   LCD_MOSI_Clr();
-		}
-		LCD_SCLK_Set();
-		dat<<=1;
-	}
-#else
-	HAL_SPI_Transmit(&hspi1, &dat, 1, 0xffff);
-#endif	
+	HAL_SPI_Transmit(&hspi1, &dat, 1, 1000);
   LCD_CS_Set();	
 }
+
+void LCD_Writ_Bus_more(uint8_t *dat,uint16_t num) 
+{	
+	LCD_CS_Clr();
+	HAL_SPI_Transmit(&hspi1, dat, num, 100);
+  LCD_CS_Set();	
+}
+
+void LCD_Writ_Bus_DMA(uint8_t *dat,uint16_t num) 
+{	
+	LCD_CS_Clr();
+	HAL_SPI_Transmit_DMA(&hspi1, dat, num);
+	lcd_finish_flag=1;
+	while(__HAL_DMA_GET_COUNTER(&hdma_spi1_tx)!=0);  //detect the dma finish
+	for(volatile uint8_t i=0;i<40;i++){}//delay,To wait lcd
+  LCD_CS_Set();	
+}
+
 /**
 ************************************************************************
 * @brief:      	LCD_WR_DATA8: 向LCD写入8位数据
@@ -751,16 +758,10 @@ void LCD_ShowPicture(uint16_t x,uint16_t y,uint16_t length,uint16_t width,const 
 {
 	uint16_t i,j;
 	uint32_t k=0;
+	uint8_t *temp_data;
 	LCD_Address_Set(x,y,x+length-1,y+width-1);
-	for(i=0;i<length;i++)
-	{
-		for(j=0;j<width;j++)
-		{
-			LCD_WR_DATA8(pic[k*2]);
-			LCD_WR_DATA8(pic[k*2+1]);
-			k++;
-		}
-	}			
+	LCD_Writ_Bus_DMA((uint8_t *)0x24000000,65535);
+	LCD_Writ_Bus_DMA((uint8_t *)(0x24010001),65535);
 }
 /**
 ************************************************************************
@@ -772,7 +773,6 @@ void LCD_ShowPicture(uint16_t x,uint16_t y,uint16_t length,uint16_t width,const 
 **/
 void LCD_Init(void)
 {
-	
 	LCD_RES_Clr();//复位
 	HAL_Delay(100);
 	LCD_RES_Set();

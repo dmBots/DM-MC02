@@ -31,14 +31,12 @@ void can_filter_init(void)
 	
 	fdcan_filter.IdType = FDCAN_STANDARD_ID;                       //标准ID
 	fdcan_filter.FilterIndex = 0;                                  //滤波器索引                   
-	fdcan_filter.FilterType = FDCAN_FILTER_RANGE;                  //滤波器类型
+	fdcan_filter.FilterType = FDCAN_FILTER_DUAL;                   //允许接收两个ID
 	fdcan_filter.FilterConfig = FDCAN_FILTER_TO_RXFIFO0;           //过滤器0关联到FIFO0  
-	fdcan_filter.FilterID1 = 0x0000;                               //32位ID
-	fdcan_filter.FilterID2 = 0x0000;                               //如果FDCAN配置为传统模式的话，这里是32位掩码
-	if(HAL_FDCAN_ConfigFilter(&hfdcan1,&fdcan_filter)!=HAL_OK) 		 //滤波器初始化
-	{
-		Error_Handler();
-	}
+	fdcan_filter.FilterID1 = 0x111;                               //32位ID
+	fdcan_filter.FilterID2 = 0x222;                               //接收ID1
+	HAL_FDCAN_ConfigFilter(&hfdcan1,&fdcan_filter); 		 				  //接收ID2
+	HAL_FDCAN_ConfigGlobalFilter(&hfdcan1, FDCAN_REJECT, FDCAN_REJECT, FDCAN_FILTER_REMOTE, FDCAN_FILTER_REMOTE);
 	HAL_FDCAN_ConfigFifoWatermark(&hfdcan1, FDCAN_CFG_RX_FIFO0, 1);
 }
 /**

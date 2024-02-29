@@ -15,3 +15,10 @@
 
 ### 购买链接
 https://dmbot.taobao.com/
+
+https://item.taobao.com/item.htm?ft=t&id=767305853444&skuId=5440731611044
+
+### 扩展板
+扩展板开源工程链接：
+
+https://oshwhub.com/dmbot/dm_mc02-h7-kai-fa-ban-pei-tao
