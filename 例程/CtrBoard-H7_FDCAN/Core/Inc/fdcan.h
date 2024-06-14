@@ -34,21 +34,14 @@ extern "C" {
 
 extern FDCAN_HandleTypeDef hfdcan1;
 
-extern FDCAN_HandleTypeDef hfdcan2;
-
-extern FDCAN_HandleTypeDef hfdcan3;
-
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
 
 void MX_FDCAN1_Init(void);
-void MX_FDCAN2_Init(void);
-void MX_FDCAN3_Init(void);
 
 /* USER CODE BEGIN Prototypes */
-uint8_t FDCAN1_Send_Msg(uint8_t* msg);
-uint8_t FDCAN1_Receive_Msg(uint8_t *buf, uint16_t *Identifier,uint16_t *len);
+
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus
