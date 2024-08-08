@@ -19,13 +19,11 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "fdcan.h"
-#include "tim.h"
-#include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "can_bsp.h"
+#include "bsp_fdcan.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -57,7 +55,7 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint8_t data[12] = {1,2,3,4,5,6,7,8,9,10,11,12};
+uint8_t tx_data[8] = {0,1,2,3,4,5,6,7};
 /* USER CODE END 0 */
 
 /**
@@ -70,6 +68,14 @@ int main(void)
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
+
+  /* Enable the CPU Cache */
+
+  /* Enable I-Cache---------------------------------------------------------*/
+  SCB_EnableICache();
+
+  /* Enable D-Cache---------------------------------------------------------*/
+  SCB_EnableDCache();
 
   /* MCU Configuration--------------------------------------------------------*/
 
@@ -90,21 +96,24 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_FDCAN1_Init();
-  MX_TIM3_Init();
-  MX_USART1_UART_Init();
-  MX_TIM4_Init();
-  MX_TIM12_Init();
+  MX_FDCAN2_Init();
+  MX_FDCAN3_Init();
   /* USER CODE BEGIN 2 */
-	can_bsp_init();
-
+	bsp_can_init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  fdcanx_send_data(&hfdcan1, 0x520, data, 12);
-	  HAL_Delay(500);
+		fdcanx_send_data(&hfdcan1, 0x520, tx_data, 8);
+		HAL_Delay(100);
+
+		fdcanx_send_data(&hfdcan2, 0x520, tx_data, 8);
+		HAL_Delay(100);
+
+		fdcanx_send_data(&hfdcan3, 0x520, tx_data, 8);
+		HAL_Delay(100);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

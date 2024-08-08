@@ -533,9 +533,9 @@
           <GroupName>bsp</GroupName>
           <Files>
             <File>
-              <FileName>can_bsp.c</FileName>
+              <FileName>bsp_fdcan.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\User\can_bsp.c</FilePath>
+              <FilePath>..\User\bsp_fdcan.c</FilePath>
             </File>
           </Files>
         </Group>

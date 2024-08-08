@@ -590,8 +590,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\User\can_bsp.c</PathWithFileName>
-      <FilenameWithoutPath>can_bsp.c</FilenameWithoutPath>
+      <PathWithFileName>..\User\bsp_fdcan.c</PathWithFileName>
+      <FilenameWithoutPath>bsp_fdcan.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

@@ -957,7 +957,7 @@ typedef  void (*pFDCAN_TT_GlobalTimeCallbackTypeDef)(FDCAN_HandleTypeDef *hfdcan
 
 /** @defgroup FDCAN_frame_type FDCAN Frame Type
   * @{
-  */ 
+  */
 #define FDCAN_DATA_FRAME   ((uint32_t)0x00000000U)  /*!< Data frame   */
 #define FDCAN_REMOTE_FRAME ((uint32_t)0x20000000U)  /*!< Remote frame */
 /**

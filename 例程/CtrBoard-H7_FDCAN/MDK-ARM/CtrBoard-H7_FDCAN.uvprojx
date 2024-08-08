@@ -7,7 +7,7 @@
 
   <Targets>
     <Target>
-      <TargetName>CtrBoard</TargetName>
+      <TargetName>CtrBoard-H7_FDCAN</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
@@ -48,8 +48,8 @@
             <NotGenerated>0</NotGenerated>
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
-          <OutputDirectory>CtrBoard\</OutputDirectory>
-          <OutputName>CtrBoard</OutputName>
+          <OutputDirectory>CtrBoard-H7_FDCAN\</OutputDirectory>
+          <OutputName>CtrBoard-H7_FDCAN</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
@@ -408,16 +408,6 @@
               <FilePath>../Core/Src/fdcan.c</FilePath>
             </File>
             <File>
-              <FileName>tim.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Core/Src/tim.c</FilePath>
-            </File>
-            <File>
-              <FileName>usart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Core/Src/usart.c</FilePath>
-            </File>
-            <File>
               <FileName>stm32h7xx_it.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/stm32h7xx_it.c</FilePath>
@@ -527,16 +517,6 @@
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c</FilePath>
             </File>
-            <File>
-              <FileName>stm32h7xx_hal_uart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32h7xx_hal_uart_ex.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -553,14 +533,9 @@
           <GroupName>bsp</GroupName>
           <Files>
             <File>
-              <FileName>can_bsp.c</FileName>
+              <FileName>bsp_fdcan.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\User\can_bsp.c</FilePath>
-            </File>
-            <File>
-              <FileName>delay.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\delay.c</FilePath>
+              <FilePath>..\User\bsp_fdcan.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -577,7 +552,7 @@
       <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="4.3.0" condition="CMSIS Core">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="4.5.0"/>
         <targetInfos>
-          <targetInfo name="CtrBoard"/>
+          <targetInfo name="CtrBoard-H7_FDCAN"/>
         </targetInfos>
       </component>
     </components>
