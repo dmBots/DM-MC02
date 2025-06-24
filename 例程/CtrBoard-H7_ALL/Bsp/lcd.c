@@ -734,17 +734,14 @@ void LCD_ShowFloatNum1(uint16_t x, uint16_t y, float num, uint8_t len, uint8_t d
 }
 /**
 ************************************************************************
-* @brief:      	LCD_ShowFloatNum1: 在LCD上显示格式化的浮点数，不支持负数
-* @param:      	x - x坐标
-*              	y - y坐标
-*              	num - 要显示的浮点数
-*              	len - 整数位数
-*              	decimal - 小数位数
-*              	fc - 字的颜色
-*              	bc - 背景颜色
-*              	sizey - 字体大小
+* @brief:      	LCD_ShowPicture: 在LCD上显示图片
+* @param:      	x - 起始x坐标
+*              	y - 起始y坐标
+*              	length - 图片长度
+*              	width - 图片宽度
+*              	pic - 指向图片数据的指针，图片数据以RGB565格式存储，高位在前(MSB First)
 * @retval:     	void
-* @details:    	在LCD上显示格式化的浮点数，支持设置整数位数、小数位数、字体颜色、背景颜色和字体大小。
+* @details:    	在LCD上显示指定位置的图片，图片数据以RGB565格式存储。
 ************************************************************************
 **/
 void LCD_ShowPicture(uint16_t x,uint16_t y,uint16_t length,uint16_t width,const uint8_t pic[])
