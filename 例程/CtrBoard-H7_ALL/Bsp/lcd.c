@@ -741,7 +741,7 @@ void LCD_ShowFloatNum1(uint16_t x, uint16_t y, float num, uint8_t len, uint8_t d
 *              	width - 图片宽度
 *              	pic - 指向图片数据的指针，图片数据以RGB565格式存储，高位在前(MSB First)
 * @retval:     	void
-* @details:    	在LCD上显示指定位置的图片，图片数据以RGB565格式存储。
+* @details:    	在LCD上显示指定位置的图片，图片数据以RGB565格式存储，高位在前(MSB First)。
 ************************************************************************
 **/
 void LCD_ShowPicture(uint16_t x,uint16_t y,uint16_t length,uint16_t width,const uint8_t pic[])
