@@ -26,7 +26,7 @@ void LcdTask_Entry(void const * argument)
         LCD_DrawLine(270,0, 270, 280,WHITE);
 //        LCD_ShowIntNum(50, 170, adc_val[0], 5, WHITE, BLACK, 32);
         LCD_ShowFloatNum(50, 170, vbus, 3, 2, WHITE, BLACK, 32);
-        LCD_ShowPicture(180, 150, 80, 80, gImage_1);
+        LCD_ShowPicture(180, 150, 40, 40, gImage_1);
         osDelay(10);
     }
     /* USER CODE END LcdTask_Entry */
