@@ -1,36 +1,24 @@
-# DM_MC02
+# DM-MC02
 
-#### Description
-达妙科技 DM_MC02 开发板资料
+## Overview
+- Translation pending.
+- Use [README.md](README.md) as the current main entry for this subtree.
 
-#### Software Architecture
-Software architecture description
+## Documentation / Resources
+- [Manual PDF](达妙科技DM-MC-Board02电机开发板使用说明书V1.1.pdf)
+- [Schematics/](原理图/)
+- [3D Shell/](3D外壳/)
+- [3D Files/](3D文件/)
+- [LCD Module/](LCD模块/)
+- [Examples/](例程/)
+- [Datasheets/](数据手册/)
+- [Package Library - Reference Only/](封装库-仅供参考/)
+- [Image/](image/)
 
-#### Installation
+## Quick Start
+- Translation pending.
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### Instructions
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### Contribution
-
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
-
-
-#### Gitee Feature
-
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+## Status
+- EN: Translation pending
+- ZH: source material exists in this subtree
+- TBD: unverified details pending
