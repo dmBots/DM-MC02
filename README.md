@@ -1,26 +1,24 @@
-# DM-MC02
+# DM_MC02
 
-## 概述
-- 这是 DM-MC02 电机开发板资料入口。
-- 本目录以说明书、原理图、3D 外壳、3D 文件、模块资料和例程为主。
-- 购物链接和模板垃圾已移除，未确认内容保持 `TBD` 或 `Translation pending`。
+#### 介绍
+达妙科技 DM_MC02 开发板资料
 
-## 文档 / 资源
-- [说明书 PDF](达妙科技DM-MC-Board02电机开发板使用说明书V1.1.pdf)
-- [原理图/](原理图/)
-- [3D外壳/](3D外壳/)
-- [3D文件/](3D文件/)
-- [LCD模块/](LCD模块/)
-- [例程/](例程/)
-- [数据手册/](数据手册/)
-- [封装库-仅供参考/](封装库-仅供参考/)
-- [image/](image/)
+### 主控渲染图
+![Image text](https://gitee.com/kit-miao/dm_-mc02/raw/master/image/DM_H7.png)
 
-## 快速开始
-- 本目录没有独立的快速开始步骤。
-- 如需资料，请先查看说明书和例程。
 
-## 状态
-- ZH: 主版
-- EN: Translation pending
-- TBD: 未确认信息保留空缺
+### 管脚标注图
+![Image text](https://gitee.com/kit-miao/dm-mc02/raw/master/image/H7_%E7%AE%A1%E8%84%9A%E6%A0%87%E6%B3%A8%E5%9B%BE.png)
+
+### 资源介绍
+![Image text](https://gitee.com/kit-miao/dm_-mc02/raw/master/image/%E5%8F%82%E6%95%B0.png)
+
+### 购买链接
+https://dmbot.taobao.com/
+
+https://item.taobao.com/item.htm?ft=t&id=767305853444&skuId=5440731611044
+
+### 扩展板
+扩展板开源工程链接：
+
+https://oshwhub.com/dmbot/dm_mc02-h7-kai-fa-ban-pei-tao
