@@ -1,26 +1,26 @@
 # DM-MC02
 
-## Overview
-- This folder is the documentation entry for the DM-MC02 controller board.
-- It keeps verified enclosure, 3D assets, schematics, modules, examples, and the manual.
-- Unverified details stay marked as `TBD` or `Translation pending`.
+## 概述
+- 这是 DM-MC02 电机开发板资料入口。
+- 本目录以说明书、原理图、3D 外壳、3D 文件、模块资料和例程为主。
+- 购物链接和模板垃圾已移除，未确认内容保持 `TBD` 或 `Translation pending`。
 
-## Documentation / Resources
-- [Manual PDF](达妙科技DM-MC-Board02电机开发板使用说明书V1.1.pdf)
-- [Schematics/](原理图/)
-- [3D Shell/](3D外壳/)
-- [3D Files/](3D文件/)
-- [LCD Module/](LCD模块/)
-- [Examples/](例程/)
-- [Datasheets/](数据手册/)
-- [Package Library - Reference Only/](封装库-仅供参考/)
-- [Image/](image/)
+## 文档 / 资源
+- [说明书 PDF](达妙科技DM-MC-Board02电机开发板使用说明书V1.1.pdf)
+- [原理图/](原理图/)
+- [3D外壳/](3D外壳/)
+- [3D文件/](3D文件/)
+- [LCD模块/](LCD模块/)
+- [例程/](例程/)
+- [数据手册/](数据手册/)
+- [封装库-仅供参考/](封装库-仅供参考/)
+- [image/](image/)
 
-## Quick Start
-- This folder does not define a separate quick-start flow.
-- Start with the manual and example folder for the board overview.
+## 快速开始
+- 本目录没有独立的快速开始步骤。
+- 如需资料，请先查看说明书和例程。
 
-## Status
-- EN: main entry
-- ZH: source material exists in this subtree
-- TBD: unverified details remain pending
+## 状态
+- ZH: 主版
+- EN: Translation pending
+- TBD: 未确认信息保留空缺
