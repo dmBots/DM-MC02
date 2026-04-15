@@ -1,10 +1,11 @@
 # DM-MC02
 
 ## Overview
-- This folder is the documentation entry for the DM-MC02 control board.
-- Materials are organized by manuals, schematics, 3D enclosure files, 3D files, examples, datasheets, packaging notes, and images.
+- Supplemental English notes for the DM-MC02 control board.
+- The workflow details live in [USAGE.md](USAGE.md), and the main entry is [README.md](README.md).
 
 ## Documentation / Resources
+- [USAGE.md](USAGE.md)
 - [User Manual PDF](达妙科技DM-MC-Board02电机开发板使用说明书V1.1.pdf)
 - [Schematics/](原理图/)
 - [3D Enclosure/](3D外壳/)
@@ -16,9 +17,9 @@
 - [Images/](image/)
 
 ## Quick Start
-- This folder does not define a separate quick-start flow.
+- Translation pending.
 
 ## Status
-- EN: Translation pending
+- EN: supplemental placeholder
 - ZH: source material exists in this subtree
 - TBD: unverified details remain pending
