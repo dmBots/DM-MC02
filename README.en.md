@@ -2,9 +2,10 @@
 
 ## Overview
 - Supplemental English notes for the DM-MC02 control board.
-- The main entry is [`README.md`](README.md).
+- The workflow details live in [USAGE.md](USAGE.md), and the main entry is [README.md](README.md).
 
 ## Documentation / Resources
+- [USAGE.md](USAGE.md)
 - [User Manual PDF](达妙科技DM-MC-Board02电机开发板使用说明书V1.1.pdf)
 - [Schematics/](原理图/)
 - [3D Enclosure/](3D外壳/)
