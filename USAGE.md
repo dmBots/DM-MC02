@@ -6,8 +6,8 @@
 
 ## Workflow
 1. Start with the user manual PDF to confirm the board material version.
-2. For wiring, schematics, or enclosure details, open [Schematics/](原理图/), [3D Enclosure/](3D外壳/), and [3D Files/](3D文件/).
-3. For module and reference material, check [LCD Module/](LCD模块/), [Datasheets/](数据手册/), and [Package Library (reference only)/](封装库-仅供参考/).
+2. For wiring, schematics, or enclosure details, open [Schematics/](Schematics/), [3D Enclosure/](3D Enclosure/), and [3D Files/](3D Files/).
+3. For module and reference material, check [LCD Module/](LCD Module/), [Datasheets/](Datasheets/), and [Package Library (reference only)/](Package Library - Reference Only/).
 4. For validation and feature checks, start from [Examples/](例程/).
 5. Use [Images/](image/) for diagrams and snapshots.
 

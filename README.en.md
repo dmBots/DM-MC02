@@ -7,13 +7,13 @@
 ## Documentation / Resources
 - [USAGE.md](USAGE.md)
 - [User Manual PDF](达妙科技DM-MC-Board02电机开发板使用说明书V1.1.pdf)
-- [Schematics/](原理图/)
-- [3D Enclosure/](3D外壳/)
-- [3D Files/](3D文件/)
-- [LCD Module/](LCD模块/)
+- [Schematics/](Schematics/)
+- [3D Enclosure/](3D Enclosure/)
+- [3D Files/](3D Files/)
+- [LCD Module/](LCD Module/)
 - [Examples/](例程/)
-- [Datasheets/](数据手册/)
-- [Package Library (reference only)/](封装库-仅供参考/)
+- [Datasheets/](Datasheets/)
+- [Package Library (reference only)/](Package Library - Reference Only/)
 - [Images/](image/)
 
 ## Quick Start
