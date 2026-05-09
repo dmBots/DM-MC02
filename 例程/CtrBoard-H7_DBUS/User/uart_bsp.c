@@ -53,7 +53,7 @@ void HAL_UART_ErrorCallback(UART_HandleTypeDef * huart)
 {
 	if(huart->Instance == UART5)
 	{
-		HAL_UARTEx_ReceiveToIdle_DMA(&huart5, rx_buff, BUFF_SIZE*2); // 接收发生错误后重启
+		HAL_UARTEx_ReceiveToIdle_DMA(&huart5, rx_buff, BUFF_SIZE); // 接收发生错误后重启
 		memset(rx_buff, 0, BUFF_SIZE);							   // 清除接收缓存		
 	}
 }
