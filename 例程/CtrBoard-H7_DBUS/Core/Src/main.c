@@ -91,9 +91,9 @@ int main(void)
   MX_USART1_UART_Init();
   MX_UART5_Init();
   /* USER CODE BEGIN 2 */
-//	HAL_UARTEx_ReceiveToIdle_DMA(&huart1, rx_buff, BUFF_SIZE*2);
-	HAL_UARTEx_ReceiveToIdle_DMA(&huart5, rx_buff, BUFF_SIZE*2);
-//	HAL_UARTEx_ReceiveToIdle_DMA(&huart8, rx_buff, BUFF_SIZE*2);
+//	HAL_UARTEx_ReceiveToIdle_DMA(&huart1, rx_buff, BUFF_SIZE);
+	HAL_UARTEx_ReceiveToIdle_DMA(&huart5, rx_buff, BUFF_SIZE);
+//	HAL_UARTEx_ReceiveToIdle_DMA(&huart8, rx_buff, BUFF_SIZE);
   /* USER CODE END 2 */
 
   /* Infinite loop */
