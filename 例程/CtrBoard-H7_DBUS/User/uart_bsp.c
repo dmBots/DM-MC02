@@ -37,13 +37,13 @@ void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef * huart, uint16_t Size)
 	{
 		if (Size <= BUFF_SIZE)
 		{
-			HAL_UARTEx_ReceiveToIdle_DMA(&huart5, rx_buff, BUFF_SIZE*2); // ½ÓÊÕÍê±ÏºóÖØÆô
+			HAL_UARTEx_ReceiveToIdle_DMA(&huart5, rx_buff, BUFF_SIZE); // æ¥æ”¶å®Œæ¯•åé‡å¯
 			sbus_frame_parse(&remoter, rx_buff);
 //			memset(rx_buff, 0, BUFF_SIZE);
 		}
-		else  // ½ÓÊÕÊı¾İ³¤¶È´óÓÚBUFF_SIZE£¬´íÎó´¦Àí
+		else  // æ¥æ”¶æ•°æ®é•¿åº¦å¤§äºBUFF_SIZEï¼Œé”™è¯¯å¤„ç†
 		{	
-			HAL_UARTEx_ReceiveToIdle_DMA(&huart5, rx_buff, BUFF_SIZE*2); // ½ÓÊÕÍê±ÏºóÖØÆô
+			HAL_UARTEx_ReceiveToIdle_DMA(&huart5, rx_buff, BUFF_SIZE); // æ¥æ”¶å®Œæ¯•åé‡å¯
 			memset(rx_buff, 0, BUFF_SIZE);							   
 		}
 	}
@@ -53,7 +53,7 @@ void HAL_UART_ErrorCallback(UART_HandleTypeDef * huart)
 {
 	if(huart->Instance == UART5)
 	{
-		HAL_UARTEx_ReceiveToIdle_DMA(&huart5, rx_buff, BUFF_SIZE*2); // ½ÓÊÕ·¢Éú´íÎóºóÖØÆô
-		memset(rx_buff, 0, BUFF_SIZE);							   // Çå³ı½ÓÊÕ»º´æ		
+		HAL_UARTEx_ReceiveToIdle_DMA(&huart5, rx_buff, BUFF_SIZE); // æ¥æ”¶å‘ç”Ÿé”™è¯¯åé‡å¯
+		memset(rx_buff, 0, BUFF_SIZE);							   // æ¸…é™¤æ¥æ”¶ç¼“å­˜		
 	}
 }
