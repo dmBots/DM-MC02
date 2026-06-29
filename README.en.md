@@ -1,25 +1,21 @@
 # DM-MC02
 
+[中文](./README.zh.md) | EN
+
 ## Overview
-- Supplemental English notes for the DM-MC02 control board.
-- The workflow details live in [USAGE.md](USAGE.md), and the main entry is [README.md](README.md).
 
-## Documentation / Resources
-- [USAGE.md](USAGE.md)
-- [User Manual PDF](达妙科技DM-MC-Board02电机开发板使用说明书V1.1.pdf)
-- [Schematics/](原理图/)
-- [3D Enclosure/](3D外壳/)
-- [3D Files/](3D文件/)
-- [LCD Module/](LCD模块/)
-- [Examples/](例程/)
-- [Datasheets/](数据手册/)
-- [Package Library (reference only)/](封装库-仅供参考/)
-- [Images/](image/)
+This repository is the material entry point for $name. The material folders are normalized so Gitee and GitHub can share the same internal structure.
 
-## Quick Start
-- Translation pending.
+## Resources
 
-## Status
-- EN: supplemental placeholder
-- ZH: source material exists in this subtree
-- TBD: unverified details remain pending
+- [manual/](manual/) - manuals, datasheets, and usage notes
+- [drawings/2d/](drawings/2d/) - 2D drawings, dimensions, and schematic materials
+- [models/3d/](models/3d/) - 3D models and mechanical files
+- [test-data/](test-data/) - test data, performance curves, and validation materials
+- [release-notes/](release-notes/) - release notes and change records
+
+## Structure Policy
+
+- Gitee uses Chinese as the default README.md.
+- GitHub uses English as the default README.md.
+- Subrepository links use only normalized local folders and do not depend on parent repository paths.
