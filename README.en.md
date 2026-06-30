@@ -4,18 +4,18 @@
 
 ## Overview
 
-This repository is the material entry point for $name. The material folders are normalized so Gitee and GitHub can share the same internal structure.
+This repository contains public materials for the DM-MC02 control board. Only directories with real content are kept, and empty placeholder directories are removed.
 
-## Resources
+## Contents
 
-- [manual/](manual/) - manuals, datasheets, and usage notes
-- [drawings/2d/](drawings/2d/) - 2D drawings, dimensions, and schematic materials
-- [models/3d/](models/3d/) - 3D models and mechanical files
-- [test-data/](test-data/) - test data, performance curves, and validation materials
-- [release-notes/](release-notes/) - release notes and change records
+- [说明书/](说明书/) - Manuals, datasheets, and interface documents
+- [2D图纸/](2D图纸/) - 2D drawings, pinout diagrams, schematics, and footprint references
+- [3D模型/](3D模型/) - STEP, STP, SolidWorks, and packaged 3D model files
+- [图片/](图片/) - Board images, parameter images, and visual references
+- [例程/](例程/) - Example projects and reference code for the control board
 
-## Structure Policy
+## Maintenance Rules
 
-- Gitee uses Chinese as the default README.md.
-- GitHub uses English as the default README.md.
-- Subrepository links use only normalized local folders and do not depend on parent repository paths.
+- Add new materials to the matching Chinese directory and do not add empty placeholder folders.
+- Keep 2D drawings and 3D models directly under 2D图纸/ and 3D模型/.
+- Keep code projects, third-party projects, and existing archives under their original file names to avoid breaking customer paths.
